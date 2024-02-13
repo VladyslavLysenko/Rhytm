@@ -3,8 +3,8 @@
 @font-face {
   font-family: CallSans;
   font-display: swap;
-  src: url('../fonts/CalSans-SemiBold.woff2') format('woff2'),
-    url('../fonts/CalSans-SemiBold.woff') format('woff');
+  src: url("../fonts/CalSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/CalSans-SemiBold.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -44,7 +44,7 @@ li {
   flex: 1 1 auto;
 }
 
-[class*='__container'] {
+[class*="__container"] {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
@@ -256,8 +256,8 @@ li {
 }
 .main__image::after {
   position: absolute;
-  content: '';
-  background: url('../img/main/decor.svg') 0 0 no-repeat;
+  content: "";
+  background: url("../img/main/decor.svg") 0 0 no-repeat;
   width: 80px;
   height: 80px;
   right: 36.3%;
@@ -403,6 +403,19 @@ li {
   font-size: 14px;
   line-height: 1.5;
 }
+
+.page__reviews {
+}
+.reviews {
+  padding-top: 240px;
+  padding-bottom: 120px;
+}
+.reviews__container {
+}
+.reviews__title {
+  margin-bottom: 100px;
+}
+
 @media (max-width: 1230px) {
   .categories__items {
     column-gap: 50px;
@@ -434,6 +447,10 @@ li {
   .why {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 767.98px) {
@@ -494,6 +511,15 @@ li {
   .why__items {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
+  }
+
+  .reviews {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .reviews__title {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 479.98px) {
@@ -566,4 +592,61 @@ li {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
+  .reviews {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .reviews__title {
+    margin-bottom: 30px;
+  }
+}
+
+.page__reviews {
+}
+
+.reviews__container {
+}
+.reviews__swiper {
+}
+.swiper-reviews {
+}
+.swiper {
+}
+.swiper-reviews__wrapper {
+}
+.swiper-wrapper {
+}
+
+.slide-swiper-reviews__image {
+  flex: 0 1 50%;
+}
+.slide-swiper-reviews__body {
+  flex: 0 1 50%;
+}
+.slide-swiper-reviews__text {
+  font-size: 24px;
+  line-height: 160%;
+}
+.slide-swiper-reviews__text:not(:last-child) {
+  margin-bottom: 56px;
+}
+.slide-swiper-reviews__author {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  color: black;
+}
+
+.slide-swiper-reviews__author:not(:last-child) {
+  margin-bottom: 8px;
+}
+.slide-swiper-reviews__name {
+}
+.slide-swiper-reviews__position {
+}
+
+.slider__wrapper {
+  display: flex;
 }
